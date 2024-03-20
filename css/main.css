@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-image: url(../img/pattern-background-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.order-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+.order-box .summary-img {
+  width: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.order-box .order-summary {
+  width: 90%;
+  padding: 2em 3em;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+.order-box .order-summary a {
+  display: block;
+}
+.order-box .order-summary .summary-info {
+  padding: 1em;
+  font-size: 1.6rem;
+}
+.order-box .order-summary .plan-box {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+.order-box .order-summary .plan-box img {
+  padding: 1em;
+}
+.order-box .order-summary .plan-box .plan-box-two {
+  align-items: center;
+  padding: 1em;
+}
+.order-box .order-summary .plan-box .plan-box-two .price {
+  margin-top: 0.2em;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+.order-box .order-summary .plan-box a {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: hsl(245, 75%, 52%);
+}
+.order-box .proceed {
+  margin-top: 2em;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0px 5px 20px hsl(245, 75%, 52%);
+}
+.order-box .cancel {
+  padding: 1em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+@media (min-width: 576px) {
+  body {
+    background-image: url(../img/pattern-background-desktop.svg);
+  }
+  body .order-box .summary-img {
+    width: 50%;
+  }
+  body .order-box .order-summary {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-image: url(../img/pattern-background-desktop.svg);
+  }
+  body .order-box .summary-img {
+    width: 50%;
+  }
+  body .order-box .order-summary {
+    width: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */

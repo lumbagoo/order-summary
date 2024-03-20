@@ -1,0 +1,129 @@
+@use 'colors' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100vh;
+	background-image: url(../img/pattern-background-mobile.svg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.order-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 0;
+	// width: 90%;
+
+	.summary-img {
+		width: 90%;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+
+	.order-summary {
+		width: 90%;
+		padding: 2em 3em;
+		background-color: white;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		text-align: center;
+		a {
+			display: block;
+		}
+
+		.summary-info {
+			padding: 1em;
+			font-size: 1.6rem;
+		}
+
+		.plan-box {
+			display: flex;
+			background-color: $very-pale-blue;
+			padding: 1em 2em;
+			border-radius: 10px;
+			img {
+				padding: 1em;
+			}
+			.plan-box-two {
+				align-items: center;
+				padding: 1em;
+				.price {
+					margin-top: 0.2em;
+					font-size: 1.4rem;
+					opacity: 0.8;
+				}
+			}
+			a {
+				margin-left: auto;
+				margin-top: auto;
+				margin-bottom: auto;
+				font-size: 1.4rem;
+				font-weight: bold;
+				color: $bright-blue;
+			}
+		}
+	}
+
+	.proceed {
+		margin-top: 2em;
+		background-color: $bright-blue;
+		padding: 1em;
+		border-radius: 10px;
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+		box-shadow: 0px 5px 20px $bright-blue;
+	}
+	.cancel {
+		padding: 1em;
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-decoration: none;
+		opacity: 0.7;
+	}
+}
+
+@media (min-width: 576px) {
+	body {
+		background-image: url(../img/pattern-background-desktop.svg);
+		.order-box {
+			.summary-img {
+				width: 50%;
+			}
+
+			.order-summary {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	body {
+		background-image: url(../img/pattern-background-desktop.svg);
+		.order-box {
+			.summary-img {
+				width: 50%;
+			}
+
+			.order-summary {
+				width: 50%;
+			}
+		}
+	}
+}
